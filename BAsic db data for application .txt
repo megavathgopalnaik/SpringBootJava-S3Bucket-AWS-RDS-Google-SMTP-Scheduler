@@ -1,0 +1,29 @@
+  BAsic db data for application 
+#1 db addition 
+
+INSERT INTO `tbl_role` (`id`, `created_at`, `name`, `updated_at`) VALUES
+(1, '2023-12-05 23:39:00.000000', 'Admin', '2023-12-05 23:39:00.000000'),
+(2, '2023-12-05 23:40:10.000000', 'Doctor', '2023-12-05 23:40:10.000000'),
+(3, '2023-12-05 23:40:44.000000', 'Patient', '2023-12-05 23:40:44.000000'),
+(4, '2023-12-20 21:38:36.000000', 'Nurse', '2023-12-20 21:38:36.000000'),
+(5, '2023-12-20 21:38:36.000000', 'Lab Assistent', '2023-12-20 21:38:36.000000'),
+(6, '2023-12-01 18:53:33.000000', 'Supervisor', '2023-12-05 23:40:44.000000'),
+(7, '2023-12-01 18:57:29.000000', 'Receptionist', '2023-12-01 18:53:33.000000');
+
+#2
+INSERT INTO `tbl_department` (`id`, `name`) VALUES
+(1, 'Gynecologist'),
+(2, 'Orthopaedics'),
+(3, 'Physiotherapy'),
+(4, 'Pharmacy'),
+(5, 'General');
+
+#3
+add admin in tbl_user
+INSERT INTO `tbl_user` (`id`, `created_user_id`, `email`, `first_name`, `last_name`, `password`, `phone_no`, `status`, `role_id`) VALUES (1, NULL, 'admin@rosahealth.com', 'Rosa', 'Admin', '448ed7416fce2cb66c285d182b1ba3df1e90016d', '8978767560', 'Active', '1');
+
+#4
+add in tbl_admin
+INSERT INTO `tbl_admin` (`id`, `address`, `available_end_time`, `available_start_time`, `available_status`, `birth_date`, `designation`, `education`, `exp_years`, `first_name`, `gender`, `last_name`, `department_id`, `user_id`) VALUES (NULL, 'Vasant Vihar. New Delhi', '18::00', '10::00', 'Absend', '28/01/1997', 'Senior', 'MBBS', '6', 'Rosa', 'Male', 'Admin', '5', '1');
+
+
